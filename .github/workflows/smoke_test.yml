@@ -10,7 +10,7 @@ jobs:
       image: php:8.0.2-cli-buster
 
     steps:
-      - uses: actions/cache@937d24475381cd9c75ae6db12cb4e79714b926ed
+      - uses: actions/cache@48af2dc4a9e8278b89d7fa154b955c30c6aaab09
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
